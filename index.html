@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Workout Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gym Workout Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="#tips">Workout Tips</a></li>
+                <li><a href="#schedule">Workout Schedule</a></li>
+                <li><a href="#tracker">Progress Tracker</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tips">
+        <h2>Workout Tips</h2>
+        <p>Here are some tips to help you get the most out of your workout:</p>
+        <ul>
+            <li>Warm up before starting your workout.</li>
+            <li>Maintain proper form to avoid injuries.</li>
+            <li>Stay hydrated and take breaks as needed.</li>
+            <li>Track your progress to stay motivated.</li>
+        </ul>
+    </section>
+
+    <section id="schedule">
+        <h2>Workout Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Workout</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Chest and Triceps</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Back and Biceps</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Legs</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Shoulders and Abs</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Full Body</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Cardio</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Rest</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="tracker">
+        <h2>Progress Tracker</h2>
+        <form id="progressForm">
+            <label for="exercise">Exercise:</label>
+            <input type="text" id="exercise" name="exercise" required>
+
+            <label for="reps">Reps:</label>
+            <input type="number" id="reps" name="reps" required>
+
+            <label for="sets">Sets:</label>
+            <input type="number" id="sets" name="sets" required>
+
+            <button type="button" onclick="submitProgress()">Submit</button>
+        </form>
+        <div id="progressLog">
+            <h3>Log:</h3>
+            <ul id="logList"></ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gym Workout Tracker. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
